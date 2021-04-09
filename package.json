@@ -1,0 +1,22 @@
+{
+  "name": "wow-interface",
+  "version": "1.0.0",
+  "description": "The interfaces for WOW packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wowlink/wow-interface.git"
+  },
+  "author": "Tianhao Zhou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wowlink/wow-interface/issues"
+  },
+  "homepage": "https://github.com/wowlink/wow-interface#readme",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
