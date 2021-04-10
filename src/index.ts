@@ -18,6 +18,6 @@ export interface WowConvertRequest {
     wowLink: string;
 }
 
-export interface WowConverterResponse {
+export interface WowConvertResponse {
     fullLink: string;
 }
