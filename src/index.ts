@@ -12,5 +12,9 @@ export interface WowMappingsFetchResponse {
 }
 
 export interface WowConvertRequest {
-    wowlink: string;
+    wowLink: string;
+}
+
+export interface WowConverterResponse {
+    fullLink: string;
 }
