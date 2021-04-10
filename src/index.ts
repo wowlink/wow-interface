@@ -21,3 +21,11 @@ export interface WowConvertRequest {
 export interface WowConvertResponse {
     fullLink: string;
 }
+
+export interface WowLinkConverter {
+    convert(req: WowConvertRequest): WowConvertResponse;
+}
+
+export interface WowMappingsFetcher {
+    fetch(req: WowMappingsFetchRequest): WowMappingsFetchResponse;
+}
