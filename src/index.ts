@@ -1,4 +1,4 @@
-interface WowMappingsFetchRequest {
+export interface WowMappingsFetchRequest {
     mappingSource: "github" | "gist" | "local" | "custom";
     githubUser?: string;
     githubRepository?: string;
@@ -7,6 +7,6 @@ interface WowMappingsFetchRequest {
     customApiEndpoint?: string;
 }
 
-interface WowMappingsFetchResponse {
+export interface WowMappingsFetchResponse {
     wowMapping: Record<string, string>;
 }
