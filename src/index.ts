@@ -10,3 +10,7 @@ export interface WowMappingsFetchRequest {
 export interface WowMappingsFetchResponse {
     wowMapping: Record<string, string>;
 }
+
+export interface WowConvertRequest {
+    wowlink: string;
+}
