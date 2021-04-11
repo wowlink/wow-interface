@@ -1,14 +1,14 @@
-import { WowMappingsFetchRequest, WowMappingsFetchResponse } from ".";
+import { WowLookupFetchRequest, WowLookupFetchResponse } from ".";
 
 test('Create request', () => {
-    const req: WowMappingsFetchRequest = {
+    const req: WowLookupFetchRequest = {
         mappingSource: "github"
     };
     expect(req).toBeDefined();
 });
 
 test('Create response', () => {
-    const res: WowMappingsFetchResponse = {
+    const res: WowLookupFetchResponse = {
         wowMapping: {
             'gh': 'https://github.com'
         }
