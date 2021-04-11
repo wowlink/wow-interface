@@ -1,4 +1,10 @@
-export interface WowLookupFetchRequest {
+export interface WowLookupFetchRequest { }
+
+export interface WowLookupFetchResponse {
+    wowMapping: Record<string, string>;
+}
+
+export interface WowLookupFetcherConfig {
     // For now the only allowed source is github. More source
     // types will be added in the future to help with more use
     // cases.
@@ -10,22 +16,22 @@ export interface WowLookupFetchRequest {
     customApiEndpoint?: string;
 }
 
-export interface WowLookupFetchResponse {
-    wowMapping: Record<string, string>;
-}
-
 export interface WowLookupFetcher {
     fetch(req: WowLookupFetchRequest): WowLookupFetchResponse;
 }
 
-export interface WowConvertRequest {
-    wowLink: string;
+export interface WowUrlConvertRequest {
+    wowUrl: string;
 }
 
-export interface WowConvertResponse {
-    fullLink: string;
+export interface WowUrlConvertResponse {
+    fullUrl: string;
 }
 
-export interface WowLinkConverter {
-    convert(req: WowConvertRequest): WowConvertResponse;
+export interface WowUrlConverterConfig {
+    fetcherResponse: WowLookupFetchResponse;
+}
+
+export interface WowUrlConverter {
+    convert(req: WowUrlConvertRequest): WowUrlConvertResponse;
 }
