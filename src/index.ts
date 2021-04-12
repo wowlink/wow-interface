@@ -1,3 +1,10 @@
+export enum BuiltInLookupFetcherType {
+    GitHub,
+    Gist,
+    LocalFile,
+    CustomBackend,
+}
+
 export interface WowLookupFetchRequest { }
 
 export interface WowLookupFetchResponse {
