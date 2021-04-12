@@ -17,7 +17,7 @@ export interface WowLookupFetcherConfig {
 }
 
 export interface WowLookupFetcher {
-    fetch(req: WowLookupFetchRequest): WowLookupFetchResponse;
+    fetch(req: WowLookupFetchRequest): Promise<WowLookupFetchResponse>;
 }
 
 export interface WowUrlConvertRequest {
