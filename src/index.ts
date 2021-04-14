@@ -12,10 +12,6 @@ export interface WowLookupFetchResponse {
 }
 
 export interface WowLookupFetcherConfig {
-    // For now the only allowed source is github. More source
-    // types will be added in the future to help with more use
-    // cases.
-    mappingSource: "github" | "gist" | "local" | "custom";
     githubUser?: string;
     githubRepository?: string;
     gistUrl?: string;
