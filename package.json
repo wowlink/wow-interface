@@ -1,5 +1,5 @@
 {
-  "name": "wow-interface",
+  "name": "@wowlink/wow-interface",
   "version": "1.0.0",
   "description": "The interfaces for WOW packages",
   "main": "lib/index.js",
