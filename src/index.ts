@@ -23,6 +23,10 @@ export interface WowLookupFetcher {
     fetch(req: WowLookupFetchRequest): Promise<WowLookupFetchResponse>;
 }
 
+export enum BuiltInWowUrlConverterType {
+    Basic,
+}
+
 export interface WowUrlConvertRequest {
     wowUrl: string;
 }
