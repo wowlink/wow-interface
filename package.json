@@ -1,16 +1,17 @@
 {
   "name": "@wowlink/wow-interface",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The interfaces for WOW packages",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "jest ./src"
+    "test": "jest ./src",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wowlink/wow-interface.git"
+    "url": "https://github.com/wowlink/wow-interface.git"
   },
   "author": "Tianhao Zhou",
   "license": "MIT",
@@ -23,6 +24,7 @@
     "@babel/preset-typescript": "^7.13.0",
     "@types/jest": "^26.0.22",
     "jest": "^26.6.3",
+    "semantic-release": "^17.4.2",
     "typescript": "^4.2.4"
   }
 }
