@@ -1,6 +1,6 @@
 {
   "name": "@wowlink/wow-interface",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "The interfaces for WOW packages",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
