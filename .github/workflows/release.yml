@@ -17,4 +17,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PKG_UPLOAD_TOKEN }}
           NPM_TOKEN: ${{ secrets.GH_PKG_UPLOAD_TOKEN }}
-        run: npx semantic-release
+        run: npm run build && npx semantic-release
