@@ -1,5 +1,7 @@
 name: Checkin
-on: pull_request_target
+on:
+  pull_request_target:
+    types: [labeled, created, updated]
 jobs:
   run-test:
     runs-on: ubuntu-latest
