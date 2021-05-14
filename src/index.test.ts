@@ -4,7 +4,8 @@ import {
     WowUrlConverter,
     WowUrlConverterConfig,
     WowUrlConvertRequest,
-    WowUrlConvertResponse
+    WowUrlConvertResponse,
+    WowUrlRankingItem
 } from ".";
 
 describe('Fetcher interface tests', () => {
@@ -42,6 +43,15 @@ describe('Converter interface tests', () => {
             searchRanking: []
         };
         expect(res).toBeDefined();
+    });
+
+    test('Create ranking item', () => {
+        const rankingItem: WowUrlRankingItem = {
+            wowUrl: 'test_wow_url',
+            fullUrl: 'test_full_url',
+            score: 0.6
+        };
+        expect(rankingItem).toBeDefined();
     });
 
     test('Create config', () => {

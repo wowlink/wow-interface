@@ -39,7 +39,31 @@ export interface WowUrlConvertRequest {
  * is a better match for the search query.
  */
 export interface WowUrlRankingItem {
+    /**
+     * Typing partial wowUrl will be supported.
+     * 
+     * For example, if gh/tianhaoz95 is set to my
+     * GitHub profile, then typing gh/tianhaoz
+     * should show the correct URL as a potential
+     * option.
+     */
+    wowUrl: string;
+    /**
+     * Potentially the full URL can be matched as
+     * well.
+     * 
+     * For example, if gh is mapped to https://github.com,
+     * although searching github will not match gh, it makes
+     * sense to match https://github.com.
+     */
     fullUrl: string;
+    /**
+     * The matching score that the search algorithm
+     * outputs. Although it should already be ranked,
+     * it will be good to also include the source for
+     * ranking.
+     */
+    score: number;
 }
 
 export interface WowUrlConvertResponse {
