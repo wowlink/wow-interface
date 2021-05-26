@@ -14,6 +14,12 @@ export interface WowLookupFetchResponse {
 export interface WowLookupFetcherConfig {
     githubUser?: string;
     githubRepository?: string;
+    /**
+     * The filename of the configuration file inside
+     * the repository defined by githubUser/githubRepository
+     * that contains the mapping.
+     */
+    githubConfigFilename?: string;
     gistUrl?: string;
     localFilename?: string;
     customApiEndpoint?: string;
