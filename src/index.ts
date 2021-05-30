@@ -1,7 +1,20 @@
 export enum BuiltInLookupFetcherType {
+  /**
+   * Use a configuration file inside a GitHub
+   * repository as the translation table.
+   */
   GitHub,
+  /**
+   * TODO(@tianhaoz95): add fetcher implementation
+   */
   Gist,
+  /**
+   * TODO(@tianhaoz95): add fetcher implementation
+   */
   LocalFile,
+  /**
+   * TODO(@tianhaoz95): add fetcher implementation
+   */
   CustomBackend,
 }
 

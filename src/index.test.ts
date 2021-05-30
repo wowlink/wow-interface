@@ -40,6 +40,8 @@ describe("Converter interface tests", () => {
     // field has become required.
     const res: WowUrlConvertResponse = {
       fullUrl: "test_full_url",
+      isMatch: true,
+      postfix: "wowlink",
       searchRanking: [],
     };
     expect(res).toBeDefined();
