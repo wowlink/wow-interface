@@ -4,5 +4,10 @@
     "javascript.format.semicolons": "insert",
     "javascript.preferences.quoteStyle": "single",
     "typescript.format.semicolons": "insert",
-    "typescript.preferences.quoteStyle": "single"
+    "typescript.preferences.quoteStyle": "single",
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2,
+    "cSpell.words": [
+        "tianhaoz"
+    ]
 }
